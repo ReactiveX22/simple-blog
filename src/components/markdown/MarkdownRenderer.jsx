@@ -61,7 +61,7 @@ const parseMarkdown = (content) => {
     // Inline Code
     else if (line.includes('`')) elements.push(renderCode(line, index));
     // Image
-    else if (/!\[.*?\]\(.*?\)/.test(line)) {
+    else if (/!\[(.*?)\]\((.*?)\s+(\d+)x(\d+)\)/.test(line)) {
       elements.push(renderImage(line, index));
     }
     // Link

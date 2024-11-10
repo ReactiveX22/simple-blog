@@ -114,16 +114,20 @@ export const renderLink = (line, index) => {
 };
 
 export const renderImage = (line, key) => {
-  const imageRegex = /!\[(.*?)\]\((.*?)\)/;
+  const imageRegex = /!\[(.*?)\]\((.*?)\s+(\d+)x(\d+)\)/;
   const match = line.match(imageRegex);
   if (match) {
     const altText = match[1];
     const url = match[2];
+    const width = match[3];
+    const height = match[4];
     return (
       <img
         key={key}
         src={url}
         alt={altText}
+        width={width}
+        height={height}
         className='mx-auto my-4 max-w-full cursor-pointer rounded'
       />
     );

@@ -1,6 +1,6 @@
 import { useLoaderData, useNavigate } from 'react-router-dom';
 import { deletePost } from '../api/postService';
-import MarkdownRenderer from '../components/markdown/MarkdownRenderer';
+import MarkdownRendererV2 from '../components/markdown/MarkdownRendererV2';
 
 export default function PostPage() {
   const { post } = useLoaderData();
@@ -18,7 +18,7 @@ export default function PostPage() {
     }
   }
   return (
-    <div className='mx-auto flex w-[744px] flex-col gap-6'>
+    <div className='mx-auto flex w-[840px] flex-col gap-6'>
       <div className='flex justify-between border-b border-zinc-800 pb-4'>
         <div className='flex flex-col gap-3'>
           <h1 className='text-3xl font-semibold'>{post.title}</h1>
@@ -69,7 +69,8 @@ export default function PostPage() {
       </div>
       <div className=''>
         <div className='whitespace-pre-line text-pretty text-justify'>
-          <MarkdownRenderer content={post.content} />
+          {/* <MarkdownRenderer content={post.content} /> */}
+          <MarkdownRendererV2>{post.content}</MarkdownRendererV2>
         </div>
       </div>
     </div>

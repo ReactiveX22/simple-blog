@@ -41,7 +41,7 @@ export default function Layout() {
       </nav>
 
       <main>
-        <div className='mt-16 flex flex-col gap-6'>
+        <div className='mb-16 mt-16 flex flex-col gap-6'>
           <Outlet />
         </div>
       </main>

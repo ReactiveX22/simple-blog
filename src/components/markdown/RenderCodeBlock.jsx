@@ -18,10 +18,10 @@ export const RenderCodeBlock = ({ codeContent, language = '' }) => {
   };
 
   return (
-    <div className='relative gap-1'>
+    <div className='relative my-4 mb-6 gap-1'>
       {language && (
         <div
-          className='absolute right-2 top-2 cursor-pointer rounded bg-zinc-700/30 p-1.5 text-center text-sm'
+          className='absolute right-2 top-2 cursor-pointer select-none rounded bg-zinc-700/30 p-1.5 text-center text-sm'
           onClick={copyToClipboard}
         >
           <p>{language}</p>
@@ -29,7 +29,7 @@ export const RenderCodeBlock = ({ codeContent, language = '' }) => {
       )}
 
       {copied && (
-        <div className='absolute right-2 top-12 rounded bg-zinc-700/30 p-1 text-center text-xs'>
+        <div className='absolute right-2 top-12 select-none rounded bg-zinc-700/30 p-1 text-center text-xs'>
           <p>✔️ Copied!</p>
         </div>
       )}
