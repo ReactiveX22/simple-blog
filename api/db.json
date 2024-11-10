@@ -1,0 +1,50 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "ReactiveX22"
+    },
+    {
+      "id": "2",
+      "name": "User02"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "My First Post",
+      "content": "Hi, I'm ReactiveX22. This is my first post 😊",
+      "author": 1
+    },
+    {
+      "id": "2",
+      "title": "My Second Post",
+      "content": "Hi, I'm ReactiveX22. This is my second post 😲",
+      "author": 1
+    },
+    {
+      "id": "3",
+      "title": "My Third Post",
+      "content": "Hi, I'm ReactiveX22. This is my third post 😊",
+      "author": 1
+    },
+    {
+      "id": "4",
+      "title": "My Fourth Post",
+      "content": "Hi, I'm ReactiveX22. This is my Fourth post 😲",
+      "author": 1
+    },
+    {
+      "title": "My Fifth Post (UPDATED)",
+      "content": "Hi, I'm ReactiveX22. This is my Fifth post 😲\n\n\nThis is my updated post....",
+      "author": 1,
+      "id": "5"
+    },
+    {
+      "id": "6",
+      "title": "My Sixth Post",
+      "content": "Hi, I'm ReactiveX22. This is my Sixth post 😲. Just testing out my API to make sure everything is working fine! I've been experimenting with different technologies lately, trying to enhance my development skills. It's been a great learning experience, and I can't wait to share more updates as I move forward in my projects.\n\nIn the coming weeks, I plan to dive deeper into web development frameworks like React and Svelte. These frameworks have become essential tools for building modern, interactive applications. I’m particularly excited about building my first full-stack app and exploring how backend technologies like Node.js and Go fit into the larger development landscape. Stay tuned for more posts and updates from me!",
+      "author": 1
+    }
+  ]
+}
