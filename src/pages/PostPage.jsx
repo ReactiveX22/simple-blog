@@ -1,5 +1,6 @@
 import { useLoaderData, useNavigate } from 'react-router-dom';
 import { deletePost } from '../api/postService';
+import MarkdownRenderer from '../components/markdown/MarkdownRenderer';
 
 export default function PostPage() {
   const { post } = useLoaderData();
@@ -67,9 +68,9 @@ export default function PostPage() {
         </div>
       </div>
       <div className=''>
-        <p className='whitespace-pre-line text-pretty text-justify'>
-          {post.content}
-        </p>
+        <div className='whitespace-pre-line text-pretty text-justify'>
+          <MarkdownRenderer content={post.content} />
+        </div>
       </div>
     </div>
   );
